@@ -20,3 +20,9 @@ jobs:
         g++ -std=c++17 -O2 -o myapp main.cpp
         ./myapp
 
+    - name: Upload binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: myapp-linux
+        path: myapp
+
